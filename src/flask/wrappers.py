@@ -149,7 +149,7 @@ class Response(ResponseBase):
         Added :attr:`max_cookie_size`.
     """
 
-    default_mimetype = "text/html"
+    default_mimetype: t.Optional[str] = "text/html"
 
     json_module = json
 
